@@ -35,7 +35,6 @@ int next_step(struct TreeNode* left, struct TreeNode*  right, int low, int high)
 
 int rangeSumBST(struct TreeNode* root, int low, int high) {
     int sum = 0;
-    int next_var = 1;
 
     if (check_the_number_in_the_range(root->val, low, high))
         sum += root->val;
