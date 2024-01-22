@@ -3,14 +3,14 @@ from random import randint
 def replay_game():
     print("Want to play again?\n")
     answer = input()
-    if answer in "yes":
+    if answer == "yes":
         return True
-    elif answer in "no":
+    elif answer == "no":
         return False
     else:
         print("Please print 'yes' or 'no'\n")
-        replay_game()
-
+        return replay_game()
+    
 def is_valid(user_number, max_number):
     if user_number.isnumeric():
         if 1 <= int(user_number) <= max_number:
