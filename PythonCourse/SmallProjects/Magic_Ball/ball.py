@@ -6,7 +6,7 @@ answers = ["'It is certain'", "'As I see it, yes'", "'Reply hazy, try again'", "
             "'Yes'", "'Cannot predict now'", "'Outlook not so good'", "'You may rely on it'", "'Signs point to yes'",
             "'Concentrate and ask again'", "'Very doubtful'"]
 
-def choise():
+def choise()->str:
     random_number = randint(0, 19)
     return answers[random_number]
 
@@ -21,7 +21,7 @@ def replay_choise()->bool:
         print("Please print 'yes' or 'no'\n")
         return replay_choise()
     
-def ball():
+def ball()->None:
     print("Hello World, I am a magic ball and I know the answer to any question you have.\n")
 
     name = input("What is your name?\n\n")
