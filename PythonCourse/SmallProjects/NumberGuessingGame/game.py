@@ -8,7 +8,7 @@ def replay_game()->bool:
     elif answer == "no":
         return False
     else:
-        print("Please print 'yes' or 'no'\n")
+        print("Please enter 'yes' or 'no'\n")
         return replay_game()
     
 def is_valid(user_number: int, max_number: int)->bool:
